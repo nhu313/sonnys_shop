@@ -8,7 +8,41 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="header-wrapper">
+	<header id="header" class="container">
+		<h1><a href="/" id="logo">Sonny's Shop</a></h1>
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="/">Home</a>
+			<a href="/">About</a>
+			<a href="services">Services</a>
+			<a href="sale">Auto Sale</a>
+			<a href="hours">Hours</a>
+			<a href="contact">Contact</a>
+		</nav>
+	</header>
+</div>
+<!-- Content -->
+<div class="content-wrapper 12u">
+	<content class="content 10u">
+				<%= yield %>
+		</content>	
+	<div class="2u sidebar-wrapper">
+		<section class="sidebar"><%= render "contact" %></section>				
+		<section class="sidebar"><%= render "hours" %></section>
+	</div>
+</div>
 
+
+<!-- Footer -->
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<div class="row">
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy; Sonny's Shop. All rights reserved. | Devloper: <a href="http://emptyingtheteacup.blogspot.com">Nhu Nguyen</a> | Design: <a href="http://html5up.net">HTML5 UP</a>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
