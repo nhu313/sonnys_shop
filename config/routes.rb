@@ -5,6 +5,8 @@ SonnysShop::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'shop#home'
   get 'contact' => 'shop#contact'
+  get 'services' => 'shop#services'
+  get 'about' => 'shop#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

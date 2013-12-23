@@ -6,4 +6,10 @@ class ShopController < ApplicationController
   def contact
   end
   
+  def services
+  end
+  
+  def about
+  end
+  
 end

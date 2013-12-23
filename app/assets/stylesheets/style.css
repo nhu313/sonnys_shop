@@ -30,8 +30,7 @@
 	body, input, textarea {
 		width: 100%;
 	}
-	
-	
+		
 	input, textarea {
 		border: 1px solid #DDD;
 		padding-left: .5em;
@@ -175,7 +174,7 @@
 			border-bottom: 0 !important;
 		}
 
-		#content .check-list li
+		.content-wrapper .check-list li
 		{
 			border-bottom: solid 1px #e2e6e8;
 		}
