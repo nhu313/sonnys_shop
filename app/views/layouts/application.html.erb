@@ -14,22 +14,22 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<a href="/">Home</a>
-			<a href="about">About</a>
-			<a href="services">Services</a>
-			<a href="sale">Auto Sale</a>
-			<a href="contact">Contact</a>
+			<a href="/about">About</a>
+			<a href="/services">Services</a>
+			<a href="/cars">Auto Sale</a>
+			<a href="/contact">Contact</a>
 		</nav>
 	</header>
 </div>
 
 <!-- Content -->
 <div class="content-wrapper 12u">
-	<content class="content 10u">
+	<content class="content container 10u">
 				<%= yield %>
-		</content>	
-	<div class="2u sidebar-wrapper">
-		<section class="sidebar"><%= render "contact" %></section>				
-		<section class="sidebar"><%= render "hours" %></section>
+	</content>
+	<div class="sidebar-wrapper 2u">
+		<section class="sidebar"><%= render "/shop/contact" %></section>				
+		<section class="sidebar"><%= render "/shop/hours" %></section>
 	</div>
 </div>
 
@@ -40,7 +40,7 @@
 			<div class="row">
 			<!-- Copyright -->
 			<div id="copyright">
-				&copy; Sonny's Shop. All rights reserved. | Devloper: <a href="http://emptyingtheteacup.blogspot.com">Nhu Nguyen</a> | Design: <a href="http://html5up.net">HTML5 UP</a>
+				&copy; Sonny's Shop. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
 			</div>
 		</footer>
 	</div>
