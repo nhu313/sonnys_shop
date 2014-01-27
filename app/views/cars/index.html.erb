@@ -5,11 +5,7 @@
       <img src=<%= image_url('cars/car.jpg') %> width=100%>
     </div>
     <table class="car_list_details column two-thirds">
-      <tr colspan=2>
-        <td>
-          <h4><%= car.make + " " + car.model + " " + car.year.to_s %></h4>
-        </td>
-      </tr>
+      <h4><%= link_to (car.make + " " + car.model + " " + car.year.to_s), car %></h4>
       <tr>
         <th>Price:</th>
         <td>$<%= number_with_delimiter(car.price, :delimiter => ',') %></td>
@@ -34,8 +30,9 @@
       </tr>
     </table>
     <% if user_id %>
-      <%= link_to 'Edit', edit_car_path(@car) %> |
-      <%= link_to 'Back', cars_path %>
+      <%= link_to 'Show', car %> |
+      <%= link_to 'Edit', edit_car_path(car) %> |
+      <%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
   </div>
   <% end %>

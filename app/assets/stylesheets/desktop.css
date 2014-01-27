@@ -129,7 +129,7 @@
 }
 
 .two-thirds {
-	width: 74%;
+	width: 73%;
 }
 
 .third {
@@ -157,4 +157,5 @@
 
 .row {
 	width: 100%;
+	clear: both;
 }
