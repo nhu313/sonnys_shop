@@ -1,8 +1,52 @@
+<div class="car">
 <p id="notice"><%= notice %></p>
+<h2><%= @car.make + " " + @car.model + " " + @car.year.to_s %></h2>
+<div class="car-photo half" >
+  <img src=<%= image_url('cars/car.jpg') %> width=100%>
+</div>
+<table class="car-details half">
+  <tr>
+    <th>Price:</th>
+    <td>$<%= number_with_delimiter(@car.price, :delimiter => ',') %></td>
+  </tr>
+  <tr>
+    <th>Year:</th>
+    <td><%= @car.year %></td>
+  </tr>
+  <tr>
+    <th>Mileage:</th>
+    <td><%= @car.mileage %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
+  <tr>
+    <th>:</th>
+    <td><%=  %></td>
+  </tr>
 
-
-<img src=<%= image_url('cars/car.jpg') %> class="half">
-
+</table>
 <p>
   <strong>Vin:</strong>
   <%= @car.vin %>
@@ -57,6 +101,7 @@
   <strong>Body style:</strong>
   <%= @car.body_style %>
 </p>
-
+</div>
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
+</div>
