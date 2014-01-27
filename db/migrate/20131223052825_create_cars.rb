@@ -2,8 +2,9 @@ class CreateCars < ActiveRecord::Migration
   def change
     create_table :cars do |t|
       t.string :vin
-      t.string :year
-      t.string :price
+      t.integer :year
+      t.integer :price
+      t.integer :mileage
       t.string :make
       t.string :model
       t.string :engine
