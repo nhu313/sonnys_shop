@@ -11,9 +11,132 @@
 /* Global                                                                        */
 /*********************************************************************************/
 
-/* Basic */
+/* Layout
+-------------------------------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
-	body
+html {
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+body {
+	background: #D4D9DD url('bg03.jpg');
+}
+
+body, input, textarea, select {
+	color: #474f51;
+	font-size: 13.5pt;
+	font-family: 'Yanone Kaffeesatz';
+	line-height: 1.85em;
+	font-weight: 300;
+}
+
+body, input, textarea, table {
+	width: 100%;
+}
+
+input, textarea {
+	border: 1px solid #DDD;
+	padding-left: .5em;
+}
+
+select {
+	border: 1px solid #DDD;
+	background: #FFF;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+/* Grid Mobile
+-------------------------------------------------------------- */
+.mobile-background {
+  background-image: url("/images/grid/mobile.png");
+  background-size: 286px 600px;
+  width: 286px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.container.mobile {
+  border: none;
+  max-width: 320px;
+  padding: 106px 24px 0;
+}
+
+.container.mobile .row {
+  margin: 0;
+}
+
+.container.mobile .column {
+  margin: 0 0 18px 0;
+  padding: 16.5px;
+  width: 100%;
+}
+
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+  html { font-size: 100%; }
+  section { padding: 2rem 0; }
+  hr { margin: 2rem auto; }
+  .intro { margin: 2rem 0; }
+  .fragmentation { min-height: 250px; }
+
+  .column.full,
+  .column.two-thirds,
+  .column.half,
+  .column.one-third,
+  .column.one-fourth {
+    margin: 2em 0 0 0;
+    width: 100%;
+  }
+
+  .column:first-child { margin-top: 0; }
+  .container.mobile .column { padding: 18px; }
+}
+
+.button {
+  color: #FFF;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: #ED391B;
+	padding: .5em;
+}
+
+
+/*	body
 	{
 		background: #D4D9DD url('bg03.jpg');
 	}
@@ -64,7 +187,7 @@
 	}
 
 /* Multi-use */
-
+/*
 	.link-list
 	{
 	}
@@ -154,12 +277,6 @@
 	{
 	}
 
-		.check-list li
-		{
-			padding: 0.7em 0 0.7em 45px;
-			font-size: 1.2em;
-			background: url('icon-checkmark.png') 0px 1.05em no-repeat;
-		}
 
 		.check-list li:first-child
 		{
@@ -235,3 +352,4 @@
 		float: left;
 		padding: .5em;
 	}
+*/

@@ -1,0 +1,160 @@
+/*
+	Halcyonic 3.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Desktop (>= 480px)                                                            */
+/*********************************************************************************/
+
+/* Header */
+#header-wrapper {
+	background: #3B4346 url('bg01.jpg');
+	border-bottom: solid 1px #272d30;
+	box-shadow: inset 0px -1px 0px 0px #51575a;
+	text-shadow: -1px -1px 1px rgba(0,0,0,0.75);
+}
+
+#header {
+	min-height: 4em;
+	position: relative;
+}
+
+#header nav {
+	position: absolute;
+	right: 0;
+	top: 1em;
+}
+
+#header nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.4em;
+	margin-left: 1.5em;
+	outline: 0;
+	letter-spacing: .02em;
+}
+
+#header nav a:hover, #header nav a:active {
+	color: #ed391b;
+}
+
+#logo {
+	position: absolute;
+	top: .3em;
+	left: 0;
+	font-family: 'Lobster', sans-serif;
+	font-size: 1.5em;
+	color: #ed391b;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+
+/* Content */
+.content-wrapper {
+	background: #f7f7f7 url('bg04.png');
+	padding: 1em;
+	width: 100%;
+	min-height: 31em;
+	overflow:auto;
+}
+
+.content {
+	padding: 2em;
+	background: #fff;
+	box-shadow: 2px 2px 2px 1px #DDD;
+	min-height: 29.1em;
+}
+
+.content section {
+	padding: 1em;
+	margin: 0 0 10% 0;
+}
+
+.content a {
+	color: #ED391B;
+	text-decoration: none;
+}
+
+.content h3 {
+	margin-bottom: .5em;
+}
+
+.content td {
+	padding: .3em;
+}
+
+.team td {
+	border: 1px solid #DDD;
+	vertical-align:text-top;
+}
+
+.teaminfo {
+	width: 100%;
+}
+
+
+/* Footer */
+
+#footer-wrapper {
+	padding: 2em 0 2em 0;
+	text-align: center;
+}
+
+#footer {
+	font-size: 1.2em;
+	color: #444;
+	font-weight: 350;
+}
+
+#footer a {
+	color: #546b76;
+}
+
+.schedule th {
+	font-weight: 400;
+	text-align: left;
+}
+
+.schedule tr {
+		border-bottom: 1px solid #CDCDCD;
+}
+
+/*-------------GRID--------------*/
+.column {
+	float: left;
+	margin-right: 1em;
+}
+
+.two-thirds {
+	width: 74%;
+}
+
+.third {
+	width: 23%;
+}
+
+.half {
+	width: 47%;
+}
+
+.sidebar-wrapper {
+	min-width: 15em;
+	overflow: hidden;
+	padding: 2em;
+	background: #fff;
+	box-shadow: 2px 2px 2px 1px #DDD;
+}
+
+.check-list li {
+	margin-left: 2em;
+	padding: 0.7em 0 0 0.5em;
+	font-size: 1.5em;
+	list-style-image: url('icon-checkmark.png');
+}
+
+.row {
+	width: 100%;
+}

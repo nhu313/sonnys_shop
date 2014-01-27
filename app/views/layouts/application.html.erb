@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sonny's Shop</title>
+  <title>Sunny's Auto Shop</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,7 +10,7 @@
 
 <div id="header-wrapper">
 	<header id="header" class="container">
-		<h1><a href="/" id="logo">Sonny's Shop</a></h1>
+		<h1><a href="/" id="logo">Sunny's Auto Shop</a></h1>
 		<!-- Nav -->
 		<nav id="nav">
 			<a href="/">Home</a>
@@ -23,26 +23,24 @@
 </div>
 
 <!-- Content -->
-<div class="content-wrapper 12u">
-	<content class="content container 10u">
+<div class="content-wrapper">
+	<div class="content column two-thirds">
 				<%= yield %>
-	</content>
-	<div class="sidebar-wrapper 2u">
-		<section class="sidebar"><%= render "/shop/contact" %></section>				
-		<section class="sidebar"><%= render "/shop/hours" %></section>
+	</div>
+	<div class="sidebar-wrapper column third">
+		<section class="sidebar"><%= render "/shop/contact" %></section>
 	</div>
 </div>
 
-
 <!-- Footer -->
-	<div id="footer-wrapper">
-		<footer id="footer" class="container">
-			<div class="row">
-			<!-- Copyright -->
-			<div id="copyright">
-				&copy; Sonny's Shop. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
-			</div>
-		</footer>
-	</div>
+<div id="footer-wrapper">
+	<footer id="footer" class="container">
+		<div class="row">
+		<!-- Copyright -->
+		<div id="copyright">
+			&copy; Sonny's Shop. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+		</div>
+	</footer>
+</div>
 </body>
 </html>

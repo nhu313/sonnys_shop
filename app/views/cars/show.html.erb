@@ -1,107 +1,57 @@
 <div class="car">
-<p id="notice"><%= notice %></p>
-<h2><%= @car.make + " " + @car.model + " " + @car.year.to_s %></h2>
-<div class="car-photo half" >
-  <img src=<%= image_url('cars/car.jpg') %> width=100%>
-</div>
-<table class="car-details half">
-  <tr>
-    <th>Price:</th>
-    <td>$<%= number_with_delimiter(@car.price, :delimiter => ',') %></td>
-  </tr>
-  <tr>
-    <th>Year:</th>
-    <td><%= @car.year %></td>
-  </tr>
-  <tr>
-    <th>Mileage:</th>
-    <td><%= @car.mileage %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-  <tr>
-    <th>:</th>
-    <td><%=  %></td>
-  </tr>
-
-</table>
-<p>
-  <strong>Vin:</strong>
-  <%= @car.vin %>
-</p>
-
-<p>
-  <strong>Year:</strong>
-  <%= @car.year %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @car.price %>
-</p>
-
-<p>
-  <strong>Make:</strong>
-  <%= @car.make %>
-</p>
-
-<p>
-  <strong>Model:</strong>
-  <%= @car.model %>
-</p>
-
-<p>
-  <strong>Engine:</strong>
-  <%= @car.engine %>
-</p>
-
-<p>
-  <strong>Transmission:</strong>
-  <%= @car.transmission %>
-</p>
-
-<p>
-  <strong>Body style:</strong>
-  <%= @car.body_style %>
-</p>
-
-<p>
-  <strong>Exterior color:</strong>
-  <%= @car.exterior_color %>
-</p>
-
-<p>
-  <strong>Interior color:</strong>
-  <%= @car.interior_color %>
-</p>
-
-<p>
-  <strong>Body style:</strong>
-  <%= @car.body_style %>
-</p>
-</div>
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+  <p id="notice"><%= notice %></p>
+  <h3><%= @car.make + " " + @car.model + " " + @car.year.to_s %></h3>
+  <div class="car-photo column half" >
+    <img src=<%= image_url('cars/car.jpg') %> width=100%>
+  </div>
+  <table class="car-details column half">
+    <tr>
+      <th>Price:</th>
+      <td>$<%= number_with_delimiter(@car.price, :delimiter => ',') %></td>
+    </tr>
+    <tr>
+      <th>Year:</th>
+      <td><%= @car.year %></td>
+    </tr>
+    <tr>
+      <th>Mileage:</th>
+      <td><%= @car.mileage %></td>
+    </tr>
+    <tr>
+      <th>Make:</th>
+      <td><%= @car.make %></td>
+    </tr>
+    <tr>
+      <th>Model:</th>
+      <td><%= @car.model %></td>
+    </tr>
+    <tr>
+      <th>Type:</th>
+      <td><%= @car.body_style %></td>
+    </tr>
+    <tr>
+      <th>Engine:</th>
+      <td><%= @car.engine %></td>
+    </tr>
+    <tr>
+      <th>Transmission:</th>
+      <td><%= @car.transmission %></td>
+    </tr>
+    <tr>
+      <th>Exterior color:</th>
+      <td><%= @car.exterior_color %></td>
+    </tr>
+    <tr>
+      <th>Interior color:</th>
+      <td><%= @car.interior_color %></td>
+    </tr>
+    <tr>
+      <th>Vin:</th>
+      <td><%= @car.vin %></td>
+    </tr>
+  </table>
+  <% if user_id %>
+    <%= link_to 'Edit', edit_car_path(@car) %> |
+    <%= link_to 'Back', cars_path %>
+  <% end %>
 </div>
