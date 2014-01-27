@@ -20,6 +20,6 @@ test:
 
 production:
   adapter: postgresql
-  database: code-reviews
+  database: sunnys-auto-shop
   pool: 5
   timeout: 5000
