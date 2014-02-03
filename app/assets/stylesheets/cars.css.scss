@@ -10,15 +10,45 @@
   }
 
   th {
-    font-weight: bold;
+    font-weight: 300;
   }
+}
+
+.car_list {
+  .row {
+    padding: 0.5em;
+  }
+
+  .row:nth-child(2){
+    background: #f6f7f9;
+  }
+
+  th {
+    padding: 0.5em;
+  }
+
 }
 
 .car_list_details {
   line-height: .4em;
-
+  min-width: 25em;
   tr {
    border-bottom: 1px solid #DDDDDD;
    text-align: left;
   }
+
+  th {
+    font-weight: 400;
+  }
+}
+
+.car-photo {
+  img {
+    width: 100%;
+    min-width: 200px;
+  }
+}
+
+.car_details th {
+  font-weight: 400;
 }

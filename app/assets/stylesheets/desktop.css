@@ -14,10 +14,11 @@
 	border-bottom: solid 1px #272d30;
 	box-shadow: inset 0px -1px 0px 0px #51575a;
 	text-shadow: -1px -1px 1px rgba(0,0,0,0.75);
+	overflow: visible;
 }
 
 #header {
-	min-height: 4em;
+	min-height: 3.7em;
 	position: relative;
 }
 
@@ -45,7 +46,7 @@
 	top: .3em;
 	left: 0;
 	font-family: 'Lobster', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	color: #ed391b;
 	text-decoration: none;
 	font-weight: normal;
@@ -59,10 +60,11 @@
 	width: 100%;
 	min-height: 31em;
 	overflow:auto;
+	margin: auto;
 }
 
 .content {
-	padding: 2em;
+	padding: 1em;
 	background: #fff;
 	box-shadow: 2px 2px 2px 1px #DDD;
 	min-height: 29.1em;
@@ -113,6 +115,10 @@
 	color: #546b76;
 }
 
+.schedule {
+	width: 100%;
+}
+
 .schedule th {
 	font-weight: 400;
 	text-align: left;
@@ -128,12 +134,24 @@
 	margin-right: 1em;
 }
 
+.column:last-child {
+	margin-right: 0px;
+}
+
 .two-thirds {
-	width: 73%;
+	max-width: 73%;
 }
 
 .third {
-	width: 23%;
+	width: 200px;
+}
+
+.fourth {
+	width: 14%;
+}
+
+.three-fourth {
+	width: 74%;
 }
 
 .half {
@@ -143,7 +161,7 @@
 .sidebar-wrapper {
 	min-width: 15em;
 	overflow: hidden;
-	padding: 2em;
+	padding: 1.5em;
 	background: #fff;
 	box-shadow: 2px 2px 2px 1px #DDD;
 }

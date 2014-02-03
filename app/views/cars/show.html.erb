@@ -4,7 +4,7 @@
   <div class="car-photo column half" >
     <img src=<%= image_url('cars/car.jpg') %> width=100%>
   </div>
-  <table class="car-details column half">
+  <table class="car_details column half">
     <tr>
       <th>Price:</th>
       <td>$<%= number_with_delimiter(@car.price, :delimiter => ',') %></td>
@@ -51,7 +51,7 @@
     </tr>
   </table>
   <% if user_id %>
-    <%= link_to 'Edit', edit_car_path(@car) %> |
+    <%= link_to 'Update', edit_car_path(@car) %> |
     <%= link_to 'Back', cars_path %>
   <% end %>
 </div>

@@ -32,19 +32,28 @@ body {
 
 body, input, textarea, select {
 	color: #474f51;
-	font-size: 13.5pt;
+	font-size: 15pt;
 	font-family: 'Yanone Kaffeesatz';
 	line-height: 1.85em;
 	font-weight: 300;
+	letter-spacing: 0.02em;
 }
 
-body, input, textarea, table {
+body, input, textarea {
 	width: 100%;
 }
 
 input, textarea {
 	border: 1px solid #DDD;
 	padding-left: .5em;
+}
+
+div {
+	overflow: auto;
+}
+
+label {
+	font-weight: 400;
 }
 
 select {
@@ -58,6 +67,7 @@ h1 {
 
 h2 {
 	font-size: 2.5em;
+	padding-bottom: 0.3em;
 }
 
 h3 {

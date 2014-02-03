@@ -40,6 +40,7 @@ class CarsController < ApplicationController
   # PATCH/PUT /cars/1
   # PATCH/PUT /cars/1.json
   def update
+    upload
     respond_to do |format|
       if @car.update(car_params)
         format.html { redirect_to @car, notice: 'Car was successfully updated.' }
@@ -50,6 +51,13 @@ class CarsController < ApplicationController
       end
     end
   end
+
+  def upload
+  uploaded_io = params[:picture]
+  File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+    file.write(uploaded_io.read)
+  end
+end
 
   # DELETE /cars/1
   # DELETE /cars/1.json
